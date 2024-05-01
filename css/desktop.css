@@ -1,0 +1,51 @@
+@media (min-width: 1024px) {
+  html,
+  body {
+    overflow-x: auto;
+  }
+
+  .page {
+    display: grid;
+    grid-template-areas:
+      'content sidebar';
+    grid-template-rows: auto;
+    grid-template-columns: auto 38.4rem;
+    column-gap: 3.4rem;
+
+    padding: 4.4rem 11rem 3.9rem 10.9rem;
+    background-color: var(--bg-base-color);
+  }
+
+  .header {
+    padding-inline: 11.2rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > h1 {
+      font-size: clamp(1.8rem, 1vw + 0.8rem, var(--font-title-24));
+    }
+  }
+
+  #text-article {
+    grid-area: content;
+    padding: 0;
+    & > img {
+      width: 100%;
+      margin-bottom: 3.1rem;
+    }
+
+    & .main-text {
+      padding: 0;
+    }
+  }
+  .sidebar {
+    padding: 0;
+  }
+
+  .articles {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
