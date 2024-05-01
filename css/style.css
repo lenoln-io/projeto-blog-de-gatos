@@ -4,16 +4,16 @@
   --font: 'Mulish', sans-serif;
   --line-height: 160%;
   font-family: var(--font);
-  
+
   --hue-color-text: 240;
-  --hue-header-footer: 195;  
-  --bg-base-color: hsl(196, 100%, 98%);                  /* #F4FCFF */
+  --hue-header-footer: 195;
+  --bg-base-color: hsl(196, 100%, 98%); /* #F4FCFF */
   --text-title-color: hsl(var(--hue-color-text), 6%, 13%); /* #202024 */
-  --text-article-color: hsl(var(--hue-color-text), 5%, 7%);/* #121214 */
+  --text-article-color: hsl(var(--hue-color-text), 5%, 7%); /* #121214 */
   --color-header: hsl(var(--hue-header-footer), 91%, 25%); /* #065e7c */
   --color-footer: hsl(var(--hue-header-footer), 46%, 40%); /* #387e96 */
-  --color-base-white: hsl(0, 0%, 100%);                  /* #fff */
-  --color-base-black: hsl(0, 0%, 0%);                    /* #000 */
+  --color-base-white: hsl(0, 0%, 100%); /* #fff */
+  --color-base-black: hsl(0, 0%, 0%); /* #000 */
 
   --font-regular: 400;
   --font-semibold: 600;
@@ -31,6 +31,11 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 a {
